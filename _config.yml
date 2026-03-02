@@ -1,7 +1,7 @@
 title: grith blog
 description: Security research and engineering notes from the grith team.
 url: "https://grith-ai.github.io"
-baseurl: "/grith-gitblog"
+baseurl: ""
 
 markdown: kramdown
 kramdown:
