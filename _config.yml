@@ -1,0 +1,21 @@
+title: grith blog
+description: Security research and engineering notes from the grith team.
+url: "https://grith-ai.github.io"
+baseurl: "/grith-gitblog"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+permalink: /:title/
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

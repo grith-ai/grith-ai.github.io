@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <a href="{{ '/' | relative_url }}">grith blog</a>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <p><a href="https://grith.ai">grith.ai</a></p>
+    </footer>
+  </div>
+</body>
+</html>
