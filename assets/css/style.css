@@ -35,9 +35,15 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
 }
 .site-header a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--text);
   font-weight: 600;
   font-size: 1.1rem;
+}
+.site-logo {
+  flex-shrink: 0;
 }
 
 /* Footer */
