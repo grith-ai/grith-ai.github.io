@@ -16,8 +16,8 @@ layout: default
         </svg>
         <span id="share-copy-label">Share</span>
       </button>
-      <a class="share-btn" href="https://x.com/intent/tweet?text={{ page.title | url_encode }}%0A%0A{{ page.canonical_url | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Share on X">Share on X</a>
-      <a class="share-btn" href="https://news.ycombinator.com/submitlink?u={{ page.canonical_url | url_encode }}&t={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer" aria-label="Submit to Hacker News">Submit to HN</a>
+      <a class="share-btn" id="share-x" href="#" target="_blank" rel="noopener noreferrer" aria-label="Share on X">Share on X</a>
+      <a class="share-btn" id="share-hn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Submit to Hacker News">Submit to HN</a>
     </div>
   </header>
   <div class="post-content">
@@ -46,13 +46,18 @@ layout: default
 </article>
 <script>
 (function() {
+  var url = window.location.href;
+  var title = document.querySelector('.post-header h1').textContent;
   var btn = document.getElementById('share-copy');
   var label = document.getElementById('share-copy-label');
+  var xLink = document.getElementById('share-x');
+  var hnLink = document.getElementById('share-hn');
+  if (xLink) xLink.href = 'https://x.com/intent/tweet?text=' + encodeURIComponent(title + '\n\n' + url);
+  if (hnLink) hnLink.href = 'https://news.ycombinator.com/submitlink?u=' + encodeURIComponent(url) + '&t=' + encodeURIComponent(title);
   if (!btn) return;
   btn.addEventListener('click', function() {
-    var url = '{{ page.canonical_url }}';
     if (navigator.share) {
-      navigator.share({ title: '{{ page.title | escape }}', url: url }).catch(function() {});
+      navigator.share({ title: title, url: url }).catch(function() {});
     } else if (navigator.clipboard) {
       navigator.clipboard.writeText(url).then(function() {
         label.textContent = 'Copied';
