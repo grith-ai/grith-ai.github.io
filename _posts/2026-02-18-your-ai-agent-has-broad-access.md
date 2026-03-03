@@ -107,7 +107,6 @@ The agent never gets the key contents. The chain breaks at step 2.
 
 grith doesn't try to understand the agent's intent or parse the prompt for malicious instructions. It evaluates what the agent *does*  - and dangerous operations are blocked regardless of why the agent is doing them.
 
-
 [^1]: [NVD: CVE-2025-55284](https://nvd.nist.gov/vuln/detail/CVE-2025-55284)
 [^2]: [Embrace The Red: Claude Code Data Exfiltration via DNS](https://embracethered.com/blog/posts/2025/claude-code-exfiltration-via-dns-requests/)
 [^3]: [HiddenLayer: How Hidden Prompt Injections Can Hijack AI Code Assistants Like Cursor](https://www.hiddenlayer.com/research/how-hidden-prompt-injections-can-hijack-ai-code-assistants-like-cursor)

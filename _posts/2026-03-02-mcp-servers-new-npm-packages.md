@@ -106,7 +106,6 @@ grith implements this by wrapping the agent at the OS level. MCP servers can des
 
 The MCP ecosystem is going to grow fast. The security model needs to exist outside the protocol, at the execution layer, where poisoned descriptions and manipulated responses can't bypass it.
 
-
 [^1]: [Invariant Labs: MCP Security Notification - Tool Poisoning Attacks](https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks)
 [^2]: [Snyk: A Post-Mortem of the Malicious event-stream Backdoor](https://snyk.io/blog/a-post-mortem-of-the-malicious-event-stream-backdoor/)
 [^3]: [Model Context Protocol: Specification - Security](https://spec.modelcontextprotocol.io/specification/2025-03-26/architecture/#security)

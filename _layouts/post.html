@@ -12,6 +12,16 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
+  <nav class="other-posts">
+    <p class="about-heading">More posts</p>
+    <ul>
+      {% for post in site.posts %}
+        {% unless post.url == page.url %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </nav>
   <aside class="about-box">
     <p class="about-heading">About grith</p>
     <p>grith is a security proxy for AI coding agents.</p>

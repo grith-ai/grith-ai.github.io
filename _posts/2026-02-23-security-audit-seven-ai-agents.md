@@ -147,7 +147,6 @@ The agent doesn't need to be modified. The security evaluation happens at the OS
 
 This is exactly what we are building at [grith.ai](https://grith.ai).
 
-
 [^1]: [Security Boulevard: Securing OpenClaw Against ClawHavoc](https://securityboulevard.com/2026/02/securing-openclaw-againstclawhavoc/)
 [^2]: [Kaspersky: New OpenClaw AI Agent Found Unsafe for Use](https://www.kaspersky.com/blog/openclaw-vulnerabilities-exposed/55263/)
 [^3]: [CrowdStrike: What Security Teams Need to Know About OpenClaw](https://www.crowdstrike.com/en-us/blog/what-security-teams-need-to-know-about-openclaw-ai-super-agent/)

@@ -4,34 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
-  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
-  <link rel="preload" href="{{ '/assets/fonts/Manrope-Variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <div class="container">
     <header class="site-header">
-      <a href="{{ '/' | relative_url }}" class="site-logo">
-        <svg viewBox="0 0 32 32" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-mark">
-          <path d="M16 2L28.5 9.25V23.75L16 31L3.5 23.75V9.25L16 2Z" stroke="#00a85a" stroke-width="1.5" fill="none"/>
-          <path d="M16 8L23 12V20L16 24L9 20V12L16 8Z" stroke="#00a85a" stroke-width="1" fill="rgba(0,168,90,0.06)"/>
-        </svg>
-        <span class="site-title"><span class="title-grith">grith</span><span class="title-ai">.ai</span></span>
-        <span class="title-separator">/</span>
-        <span class="title-blog">blog</span>
-      </a>
+      <a href="{{ '/' | relative_url }}">grith blog</a>
     </header>
     <main>
       {{ content }}
     </main>
     <footer class="site-footer">
-      <a href="https://grith.ai" class="footer-logo">
-        <svg viewBox="0 0 32 32" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 2L28.5 9.25V23.75L16 31L3.5 23.75V9.25L16 2Z" stroke="#00a85a" stroke-width="1.5" fill="none"/>
-          <path d="M16 8L23 12V20L16 24L9 20V12L16 8Z" stroke="#00a85a" stroke-width="1" fill="rgba(0,168,90,0.06)"/>
-        </svg>
-        grith.ai
-      </a>
+      <p><a href="https://grith.ai">grith.ai</a></p>
     </footer>
   </div>
 </body>

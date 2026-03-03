@@ -74,7 +74,6 @@ That is what grith does. Wrap any CLI agent  - including OpenClaw  - with `grith
 
 The OpenClaw bans are a signal. AI agents are here, the security architecture isn't, and enterprises are making binary choices (ban or allow) because they don't have a third option. grith is that third option.
 
-
 [^1]: [Wired: Meta and Other Tech Companies Ban OpenClaw Over Cybersecurity Concerns](https://www.wired.com/story/openclaw-banned-by-tech-companies-as-security-concerns-mount/)
 [^2]: [Kaspersky: New OpenClaw AI Agent Found Unsafe for Use](https://www.kaspersky.com/blog/openclaw-vulnerabilities-exposed/55263/)
 [^3]: [CrowdStrike: What Security Teams Need to Know About OpenClaw](https://www.crowdstrike.com/en-us/blog/what-security-teams-need-to-know-about-openclaw-ai-super-agent/)
