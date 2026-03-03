@@ -190,3 +190,34 @@ a:hover { text-decoration: underline; }
 .about-links {
   margin-top: 0.75rem;
 }
+
+/* Share buttons */
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.share-btn:hover {
+  border-color: var(--text-secondary);
+  color: var(--text);
+  text-decoration: none;
+}
+.share-btn svg {
+  flex-shrink: 0;
+}
